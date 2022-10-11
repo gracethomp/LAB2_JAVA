@@ -1,0 +1,11 @@
+1 BMW X7(G07) 2018 dark_red 50000 10000000
+2 BMW X6(F16) 2014 dark_grey 23000 10020000
+3 Citroen C3_Aircross 2017 blue 43000 20000000
+4 Citroen C5_Aircross 2018 dark_grey 41000 20043000
+5 Citroen C4_5-doors 2015 red 46500 22300000
+6 Citroen Berlingo_Multispace 2018 grey 33000 20005021
+7 Lexus UX_250h 2018 blue 49550 34005000
+8 Lexus RC_200t/350 2013 red 33000 30060900
+9 Opel Combo 2011 dark_red 20000 40550000
+10 Suzuki SX4 2016 dark_blue 39000 51040008
+11 Suzuki Jimmy 2012 white 31500 54500000
