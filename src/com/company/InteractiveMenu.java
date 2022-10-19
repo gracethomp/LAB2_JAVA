@@ -11,6 +11,10 @@ public class InteractiveMenu {
             "the price of which is higher than the specified one";
     private static final String ENTER_SENTENCE_CHOICE = "Enter a letter: ";
     private static final String ENTER_SENTENCE_BRAND = "Enter a title of brand: ";
+
+    private static final String ENTER_SENTENCE_YEAR = "Enter a production year: ";
+
+    private static final String ENTER_SENTENCE_PRICE = "Enter a minimum price: ";
     private static final String ERROR_INPUT = "TRY AGAIN! ";
     private static final String CASE_1 = "a";
     private static final String CASE_2 = "b";
@@ -50,7 +54,11 @@ public class InteractiveMenu {
                     isEnd = true;
                 }
                 case CASE_3 -> {
-                    System.out.println("sorting.");
+                    System.out.printf(ENTER_SENTENCE_YEAR);
+                    int year = scanner.nextInt();
+                    System.out.printf(ENTER_SENTENCE_PRICE);
+                    int price = scanner.nextInt();
+                    sortingManager.sortByYearAndPrice(year,price);
                     isEnd = true;
                 }
                 default -> {
@@ -62,3 +70,4 @@ public class InteractiveMenu {
     }
 
 }
+

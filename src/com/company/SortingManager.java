@@ -16,4 +16,12 @@ public class SortingManager {
                 System.out.println(cars[i]);
         }
     }
+
+    public void sortByYearAndPrice(int year, int price){
+        for(int i = 0; i < Array.getLength(cars); i++){
+            if(cars[i].getYear()==year && cars[i].getPrice()>price){
+                System.out.println(cars[i]);
+            }
+        }
+    }
 }
