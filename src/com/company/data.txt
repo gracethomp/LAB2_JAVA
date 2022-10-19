@@ -9,3 +9,4 @@
 9 Opel Combo 2011 dark_red 20000 40550000
 10 Suzuki SX4 2016 dark_blue 39000 51040008
 11 Suzuki Jimmy 2012 white 31500 54500000
+12 Citroen C5_Aircross 2015 dark_grey 41000 20043000

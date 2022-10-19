@@ -9,8 +9,6 @@ public class Car {
     private int price;
     private long regNumber;
 
-    public Car() {}
-
     public Car(long id, String brand, String model, int year, String color, int price, long regNumber) {
         this.id = id;
         this.brand = brand;
