@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class InteractiveMenu {
     private static final String VAR_A = "a. A list of cars of given brand";
-    private static final String VAR_B = "b. A list of cars of a given model that have been in operation " +
+    private static final String VAR_B = "b. A list of cars of a given model that have been in use " +
             "for more than n years";
     private static final String VAR_C = "c. A list of cars of a given year of manufacture, " +
             "the price of which is higher than the specified one";
@@ -15,6 +15,8 @@ public class InteractiveMenu {
     private static final String ENTER_SENTENCE_YEAR = "Enter a production year: ";
 
     private static final String ENTER_SENTENCE_PRICE = "Enter a minimum price: ";
+    private static final String ENTER_SENTENCE_USAGE_YEAR = "Enter a number of years in use: ";
+    private static final String ENTER_SENTENCE_MODEL = "Enter a model: ";
     private static final String ERROR_INPUT = "TRY AGAIN! ";
     private static final String CASE_1 = "a";
     private static final String CASE_2 = "b";
@@ -50,7 +52,13 @@ public class InteractiveMenu {
                     isEnd = true;
                 }
                 case CASE_2 -> {
-                    System.out.println("sorting..");
+                    System.out.print(ENTER_SENTENCE_BRAND);
+                    scanner.nextLine();
+                    System.out.print(ENTER_SENTENCE_MODEL);
+                    String model = scanner.nextLine();
+                    System.out.print(ENTER_SENTENCE_USAGE_YEAR);
+                    int year = scanner.nextInt();
+                    sortingManager.sortByModelAndUsage(model, year);
                     isEnd = true;
                 }
                 case CASE_3 -> {
